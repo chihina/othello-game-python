@@ -33,7 +33,8 @@ You can choice order of hitting for human.
 You can choice three CPU mode
 - Weak: This CPU hit piece based on random number
 - Little strong: This CPU hit piece base on random number and *rule*  ( *rule*: hit coorner cell prior to other pieces )
-- strong: This CPU hit piece based on static evaluation value of cell  
+- strong: This CPU hit piece based on static evaluation value of cell
+
 ![Choice cpu_page](https://github.com/chihina/othello-game-python/blob/master/Images/cpu_choice_resized.png)
 
 If you finished 1-4 part, game will start!!
