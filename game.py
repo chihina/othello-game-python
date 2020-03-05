@@ -60,14 +60,14 @@ class Othello:
                 # 先攻後攻取得
                 turn_num = self.board.turn
                 if turn_num == "first":
-                    piece_color = "黒駒"
+                    piece_color = "Black piece"
                 elif turn_num == "second":
-                    piece_color = "白駒"
+                    piece_color = "White piece"
                 else:
                     piece_color = ""        
                 
                 
-                self.view.player_info = tkinter.Label(self.view.window, text='humanのターン:' + piece_color, bg='#008080', fg='#000000', width=30)
+                self.view.player_info = tkinter.Label(self.view.window, text='Turn of Human:  ' + piece_color, bg='#008080', fg='#000000', width=30)
                 self.view.player_info.place(x=20, y=self.view.WINDOW_SIZE + 20)
                 self.view.set_flag = True
 
@@ -76,21 +76,21 @@ class Othello:
                 # 先攻後攻取得
                 turn_num = self.board.turn
                 if turn_num == "first":
-                    piece_color = "黒駒"
+                    piece_color = "Black piece"
                 elif turn_num == "second":
-                    piece_color = "白駒"
+                    piece_color = "White piece"
                 else:
                     piece_color = ""  
 
                 # player情報表示
                 if self.view.players[self.board.turn] == "random":
-                    self.view.player_info = tkinter.Label(self.view.window, text='コンピュータ(完全乱数)のターン:' + piece_color, bg='#008080', fg='#000000', width=30)
+                    self.view.player_info = tkinter.Label(self.view.window, text='Turn of CPU(weak):  ' + piece_color, bg='#008080', fg='#000000', width=30)
 
                 elif self.view.players[self.board.turn] == "random_2":
-                    self.view.player_info = tkinter.Label(self.view.window, text='コンピュータ(少し強い)のターン:' + piece_color, bg='#008080', fg='#000000', width=30)
+                    self.view.player_info = tkinter.Label(self.view.window, text='Turn of CPU(little strong):  ' + piece_color, bg='#008080', fg='#000000', width=30)
 
                 elif self.view.players[self.board.turn] == "random_3":
-                    self.view.player_info = tkinter.Label(self.view.window, text='コンピュータ(強い)のターン:' + piece_color, bg='#008080', fg='#000000', width=30)
+                    self.view.player_info = tkinter.Label(self.view.window, text='Turn of CPU(strong):  ' + piece_color, bg='#008080', fg='#000000', width=30)
                 
                 self.view.player_info.place(x=20, y=self.view.WINDOW_SIZE + 20)
                 self.view.set_flag = True
@@ -591,19 +591,19 @@ class TkView:
     # ゲームモードの選択
     def choice_attack(self):
         #モード選択ボタン配置
-        self.describe = tkinter.Label(self.window, text='モード選択', bg='#008080', fg='#000000', width=10)
+        self.describe = tkinter.Label(self.window, text='Mode', bg='#008080', fg='#000000', width=10)
         self.describe.place(x=20, y=self.WINDOW_SIZE + 10)
 
         # mode_1 (human vs human)
-        self.mode_1_button =  tkinter.Button(self.window, text='人間対人間', bg='#008080', fg='#000000', width=20, command=self.mode_1_clicked)
+        self.mode_1_button =  tkinter.Button(self.window, text='Human vs Human', bg='#008080', fg='#000000', width=20, command=self.mode_1_clicked)
         self.mode_1_button.place(x=20, y=self.WINDOW_SIZE + 50)
 
         # mode_2(human vs random)
-        self.mode_2_button =  tkinter.Button(self.window, text='人間対コンピューター', bg='#008080', fg='#000000', width=20, command=self.mode_2_clicked)
+        self.mode_2_button =  tkinter.Button(self.window, text='Human vs CPU', bg='#008080', fg='#000000', width=20, command=self.mode_2_clicked)
         self.mode_2_button.place(x=200, y=self.WINDOW_SIZE + 50)
 
         # mode_3(random vs random)
-        self.mode_3_button =  tkinter.Button(self.window, text='コンピューター対コンピューター', bg='#008080', fg='#000000', width=20, command=self.mode_3_clicked)
+        self.mode_3_button =  tkinter.Button(self.window, text='CPU vs CPU', bg='#008080', fg='#000000', width=20, command=self.mode_3_clicked)
         self.mode_3_button.place(x=380, y=self.WINDOW_SIZE + 50)
 
     # mode_1クリック時(human vs human)
@@ -622,11 +622,11 @@ class TkView:
         self.mode_destory()
 
         #  (先攻ボックス)
-        self.before_button = tkinter.Button(self.window, text='先攻:黒駒', bg='#008080', fg='#000000', width=20, command=self.before_clicked)
+        self.before_button = tkinter.Button(self.window, text='Going first:Black piece', bg='#008080', fg='#000000', width=20, command=self.before_clicked)
         self.before_button.place(x=20, y=self.WINDOW_SIZE + 20)
 
         #  (後攻ボックス)
-        self.after_button = tkinter.Button(self.window, text='後攻:白駒', bg='#008080', fg='#000000', width=20, command=self.after_clicked)
+        self.after_button = tkinter.Button(self.window, text='Second attack:White piece', bg='#008080', fg='#000000', width=20, command=self.after_clicked)
         self.after_button.place(x=200, y=self.WINDOW_SIZE + 20)
 
     # mode_3クリック時(randmo vs random)
@@ -635,17 +635,17 @@ class TkView:
         # モード選択ボタンを削除
         self.mode_destory()
 
-        self.describe = tkinter.Label(self.window, text='強さ選択(先攻)', bg='#008080', fg='#000000', width=10)
+        self.describe = tkinter.Label(self.window, text='Choice strength(Going first)', bg='#008080', fg='#000000', width=25)
         self.describe.place(x=20, y=self.WINDOW_SIZE + 10)
 
         #  (先攻ボックス)
-        self.before_computer_1 = tkinter.Button(self.window, text='完全乱数', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked(0))
+        self.before_computer_1 = tkinter.Button(self.window, text='Weak', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked(0))
         self.before_computer_1.place(x=20, y=self.WINDOW_SIZE + 50)
         
-        self.before_computer_2 = tkinter.Button(self.window, text='少し強い', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked(1))
+        self.before_computer_2 = tkinter.Button(self.window, text='Little strong', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked(1))
         self.before_computer_2.place(x=200, y=self.WINDOW_SIZE + 50)
         
-        self.before_computer_3 = tkinter.Button(self.window, text='強い', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked(2))
+        self.before_computer_3 = tkinter.Button(self.window, text='Strong', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked(2))
         self.before_computer_3.place(x=380, y=self.WINDOW_SIZE + 50)
 
     # モード選択ボタン削除
@@ -676,17 +676,17 @@ class TkView:
         # 表示削除
         self.describe.destroy()
 
-        self.describe = tkinter.Label(self.window, text='強さ選択(先攻)', bg='#008080', fg='#000000', width=10)
+        self.describe = tkinter.Label(self.window, text='Choice strength(Going first)', bg='#008080', fg='#000000', width=25)
         self.describe.place(x=20, y=self.WINDOW_SIZE + 10)
 
         #  (先攻ボックス)
-        self.before_computer_1 = tkinter.Button(self.window, text='完全乱数', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked_human(0))
+        self.before_computer_1 = tkinter.Button(self.window, text='Weak', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked_human(0))
         self.before_computer_1.place(x=20, y=self.WINDOW_SIZE + 50)
         
-        self.before_computer_2 = tkinter.Button(self.window, text='少し強い', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked_human(1))
+        self.before_computer_2 = tkinter.Button(self.window, text='Little strong', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked_human(1))
         self.before_computer_2.place(x=200, y=self.WINDOW_SIZE + 50)
         
-        self.before_computer_3 = tkinter.Button(self.window, text='強い', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked_human(2))
+        self.before_computer_3 = tkinter.Button(self.window, text='Strong', bg='#008080', fg='#000000', width=20, command= lambda: self.before_computer_clicked_human(2))
         self.before_computer_3.place(x=380, y=self.WINDOW_SIZE + 50)
 
     # 後攻ボタンクリック時(human vs random)
@@ -724,17 +724,17 @@ class TkView:
         # 表示削除
         self.describe.destroy()
 
-        self.describe = tkinter.Label(self.window, text='強さ選択(後攻)', bg='#008080', fg='#000000', width=10)
+        self.describe = tkinter.Label(self.window, text='Choice strength(second attack)', bg='#008080', fg='#000000', width=25)
         self.describe.place(x=20, y=self.WINDOW_SIZE + 10)
 
         #  (後攻ボックス)
-        self.after_computer_1 = tkinter.Button(self.window, text='完全乱数', bg='#008080', fg='#000000', width=20, command= lambda: self.after_computer_clicked(0))
+        self.after_computer_1 = tkinter.Button(self.window, text='Weak', bg='#008080', fg='#000000', width=20, command= lambda: self.after_computer_clicked(0))
         self.after_computer_1.place(x=20, y=self.WINDOW_SIZE + 50)
         
-        self.after_computer_2 = tkinter.Button(self.window, text='少し強い', bg='#008080', fg='#000000', width=20, command= lambda: self.after_computer_clicked(1))
+        self.after_computer_2 = tkinter.Button(self.window, text='Little strong', bg='#008080', fg='#000000', width=20, command= lambda: self.after_computer_clicked(1))
         self.after_computer_2.place(x=200, y=self.WINDOW_SIZE + 50)
     
-        self.after_computer_3 = tkinter.Button(self.window, text='強い', bg='#008080', fg='#000000', width=20, command= lambda: self.after_computer_clicked(2))
+        self.after_computer_3 = tkinter.Button(self.window, text='Strong', bg='#008080', fg='#000000', width=20, command= lambda: self.after_computer_clicked(2))
         self.after_computer_3.place(x=380, y=self.WINDOW_SIZE + 50)
     
     # コンピューターの選択(後攻) tkinterのcommandの特質より関数をネストして使用
@@ -780,7 +780,7 @@ class TkView:
     def alert_message_human(self):
         # アラートが表示されていなければ
         if self.alert_flag == False:
-            self.alert = tkinter.Label(self.window, text='その場所は置けません', bg='#008080', fg='#000000', width=50)
+            self.alert = tkinter.Label(self.window, text="Don't hit there", bg='#008080', fg='#000000', width=50)
             self.alert.place(x=200, y=self.WINDOW_SIZE + 20)
             
             # アラート表示に変更
@@ -793,7 +793,7 @@ class TkView:
     def alert_message_random(self):
         # アラートが表示されていなければ
         if self.alert_flag == False:
-            self.alert = tkinter.Label(self.window, text='試行中', bg='#008080', fg='#000000', width=40)
+            self.alert = tkinter.Label(self.window, text='Thinking', bg='#008080', fg='#000000', width=40)
             self.alert.place(x=250, y=self.WINDOW_SIZE + 20)
             
             # アラート表示に変更
@@ -804,7 +804,7 @@ class TkView:
     # パスアラート(random player)
     def alert_pass(self):
         if self.pass_flag_alert == False:
-            self.alert_pass_button = tkinter.Button(self.window, text='パスしてください', bg='#008080', fg='#000000', width=20, command=self.turn_pass)
+            self.alert_pass_button = tkinter.Button(self.window, text='Pass your turn', bg='#008080', fg='#000000', width=20, command=self.turn_pass)
             self.pass_flag_alert = True
         self.alert_pass_button.place(x=200, y=self.WINDOW_SIZE + 50)
         # アラート表示に変更
@@ -828,11 +828,11 @@ class TkView:
         black_count = board.result_count[0]
         white_count = board.result_count[1]
         
-        self.alert = tkinter.Label(self.window, text='ゲーム終了', bg='#008080', fg='#000000', width=40)
+        self.alert = tkinter.Label(self.window, text='Finish game', bg='#008080', fg='#000000', width=40)
         if self.restart_flag_alert == False:
-            self.alert_restart = tkinter.Button(self.window, text='もう一回遊ぶ', bg='#008080', fg='#000000', width=20, command=self.restart_game)
+            self.alert_restart = tkinter.Button(self.window, text='Play again', bg='#008080', fg='#000000', width=20, command=self.restart_game)
             self.restart_flag_alert = True
-        self.result = tkinter.Label(self.window, text="先攻(黒):" + str(black_count) + "\n" + "後攻(白):" + str(white_count), bg='#008080', fg='#000000', width=40)
+        self.result = tkinter.Label(self.window, text="Going fisrt(Black piece):" + str(black_count) + "\n" + "Second attack(White piece):" + str(white_count), bg='#008080', fg='#000000', width=40)
 
         self.alert.place(x=250, y=self.WINDOW_SIZE + 20)
         self.alert_restart.place(x=20, y=self.WINDOW_SIZE + 50)
