@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ## How to play
-You can play it bellow command 
+You can only do bellow command
 ```
 python game.py 
 ```
