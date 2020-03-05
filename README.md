@@ -1,6 +1,6 @@
 # Othello-game-python
 This is a othello game. It is written by python. 
-You can play it 
+You can play it bellow command 
 ```
-python game.py --
+python game.py 
 ```
