@@ -40,4 +40,4 @@ If you finished 1-4 part, game will start!!
 You can hit the cell which is annotated by red circle.  
 The circle shows cell whice you can hit.
 
-![Choice page](https://github.com/chihina/othello-game-python/blob/master/Images/choice.png)
+![Choice page](https://github.com/chihina/othello-game-python/blob/master/Images/choice_resized.png)
