@@ -25,8 +25,13 @@ You can choice three game mode.
 - Human vs CPU
 - CPU vs CPU
 
-## 3. Choice CPU mode(If you play Human vs Human mode, this part is unrelated)
+## 3. Choice Order of hitting (Only Human vs CPU mode)
+You can choice order of hitting for human.
+
+## 4. Choice CPU mode (If you play Human vs Human mode, this part is unrelated)
 You can choice three CPU mode
 - Weak: This CPU hit piece based on random number
 - Little strong: This CPU hit piece base on random number and *rule*  (*rule*: hit coorner cell prior to other pieces)
 - strong: This CPU hit piece based on static evaluation value of cell
+
+If you finished 1-4 part, game start!!
