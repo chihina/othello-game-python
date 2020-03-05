@@ -17,4 +17,4 @@ python game.py
 
 ## Overview of this game 
 ### 
-![Top page](../Images/1.png "サンプル")
+![Top page](https://github.com/chihina/othello-game-python/blob/master/Images/1.png "サンプル")
