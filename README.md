@@ -37,5 +37,5 @@ You can choice three CPU mode
 If you finished 1-4 part, game will start!!
 
 # How to play game
-You can hit the cell which is annotated by red circle."/n"
+You can hit the cell which is annotated by red circle.  
 The circle shows cell whice you can hit.
