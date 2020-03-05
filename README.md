@@ -16,6 +16,7 @@ You can only do below command.
 python game.py 
 ```
 After that, You can see below window.
+
 ![Top page](https://github.com/chihina/othello-game-python/blob/master/Images/top_resized.png)
 
 ## 2. Choice game mode
