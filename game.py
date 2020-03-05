@@ -478,7 +478,7 @@ class TkView:
 
     def init_window(self):
         self.window = tkinter.Tk()
-        self.window.title("オセロ")
+        self.window.title("Othello")
         self.window.resizable(width=False, height=False)
         self.window.attributes("-topmost", True)
 
