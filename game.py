@@ -780,8 +780,8 @@ class TkView:
     def alert_message_human(self):
         # アラートが表示されていなければ
         if self.alert_flag == False:
-            self.alert = tkinter.Label(self.window, text="Don't hit there", bg='#008080', fg='#000000', width=50)
-            self.alert.place(x=200, y=self.WINDOW_SIZE + 20)
+            self.alert = tkinter.Label(self.window, text="Don't hit there", bg='#008080', fg='#000000', width=20)
+            self.alert.place(x=300, y=self.WINDOW_SIZE + 20)
             
             # アラート表示に変更
             self.alert_flag = True
@@ -793,8 +793,8 @@ class TkView:
     def alert_message_random(self):
         # アラートが表示されていなければ
         if self.alert_flag == False:
-            self.alert = tkinter.Label(self.window, text='Thinking', bg='#008080', fg='#000000', width=40)
-            self.alert.place(x=250, y=self.WINDOW_SIZE + 20)
+            self.alert = tkinter.Label(self.window, text='Thinking', bg='#008080', fg='#000000', width=20)
+            self.alert.place(x=300, y=self.WINDOW_SIZE + 20)
             
             # アラート表示に変更
             self.alert_flag = True
