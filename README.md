@@ -17,3 +17,4 @@ python game.py
 
 ## Overview of this game 
 ### 
+![Top page](../Images/1.png "サンプル")
