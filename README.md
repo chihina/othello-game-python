@@ -46,6 +46,6 @@ Click around cell you wanna hit.
 ![Choice page](https://github.com/chihina/othello-game-python/blob/master/Images/choice_resized.png)
 
 # Result view
-If you finish thisgame, you will see this result window.
-
+If you finish thisgame, you will see this result window.  
+Game result is located in lower right corner.  
 ![Result page](https://github.com/chihina/othello-game-python/blob/master/Images/result_resized.png)
