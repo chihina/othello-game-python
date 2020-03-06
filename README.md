@@ -2,7 +2,7 @@
 This is a othello game. It is written by python. 
 
 ## Environment
-python3.7.1
+python 3.7.1
 
 And you can use requirements.txt
 ```
