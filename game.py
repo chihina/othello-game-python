@@ -997,7 +997,7 @@ class Board:
         self.tag_to_evalvalue["6_6"] = -15
         self.tag_to_evalvalue["6_7"] = -12
         self.tag_to_evalvalue["7_0"] = 30
-        self.tag_to_evalvalue["7_1"] = -125
+        self.tag_to_evalvalue["7_1"] = -12
         self.tag_to_evalvalue["7_2"] = 0
         self.tag_to_evalvalue["7_3"] = -1
         self.tag_to_evalvalue["7_4"] = -1
