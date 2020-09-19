@@ -16,7 +16,7 @@ You can only do below command.
 python game.py 
 ```
 After that, You can see below window.
-And, you can use the exe file.
+And, you also use the exe file.
 
 ![Top page](https://github.com/chihina/othello-game-python/blob/master/Images/top_resized.png)
 
