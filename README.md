@@ -51,7 +51,7 @@ If you finish thisgame, you will see this result window.
 Game result is located in lower right corner.  
 ![Result page](https://github.com/chihina/othello-game-python/blob/master/Images/result_resized.png)  
 
-## Contact
+## Contacts
 If you can know about detail me, you can see my website.
 
 Qitta page: https://qiita.com/chi-na  
