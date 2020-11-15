@@ -165,7 +165,7 @@ typesystem==0.2.4
 typing-extensions==3.7.4
 uritemplate==3.0.0
 urllib3==1.25.3
-uvicorn==0.8.6
+uvicorn==0.11.7
 vine==1.3.0
 virtualenv==16.7.2
 virtualenvwrapper-win==1.2.5
