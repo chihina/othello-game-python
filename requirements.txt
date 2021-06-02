@@ -164,7 +164,7 @@ typed-ast==1.4.0
 typesystem==0.2.4
 typing-extensions==3.7.4
 uritemplate==3.0.0
-urllib3==1.25.3
+urllib3==1.26.5
 uvicorn==0.8.6
 vine==1.3.0
 virtualenv==16.7.2
