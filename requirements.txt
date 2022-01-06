@@ -17,7 +17,7 @@ backcall==0.1.0
 billiard==3.6.1.0
 binaryornot==0.4.4
 black==19.3b0
-celery==4.3.0
+celery==5.2.2
 certifi==2019.6.16
 cffi==1.12.3
 chardet==3.0.4
