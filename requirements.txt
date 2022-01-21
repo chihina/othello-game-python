@@ -63,7 +63,7 @@ idna==2.8
 imagesize==1.1.0
 importlib-metadata==0.19
 ipdb==0.12.2
-ipython==7.7.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 isort==4.3.21
 itsdangerous==1.1.0
