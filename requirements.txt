@@ -71,7 +71,7 @@ itypes==1.1.0
 jedi==0.14.1
 Jinja2==2.10.1
 jinja2-time==0.2.0
-joblib==0.13.2
+joblib==1.2.0
 JsonForm==0.0.2
 jsonschema==3.0.2
 JsonSir==0.0.2
